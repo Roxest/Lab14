@@ -17,3 +17,26 @@ int main(){
 	
 	return 0;
 }
+
+void shuffle(int &a,int &b,int &c,int &d){
+	int pos = rand()%6+1;
+	switch (pos){
+		case 1:
+			swap(a,b);
+			break;
+		case 2 :
+			swap(a,c);
+			break;
+		case 3 :
+			swap(a,d);
+			break;
+		case 4 :
+			swap(b,c);
+			break;
+		case 5 :
+			swap(b,d);
+			break;
+		default :
+			swap(d,c);	
+	} 
+}
